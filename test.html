@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <svg id="moniter" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 510.09 450.15" width="50" height="auto">
+        <defs>
+            <style>
+                #moniter .cls-1,
+                #moniter .cls-2 {
+                    fill: none;
+                    stroke: #000;
+                    stroke-linecap: round;
+                    stroke-width: 13px;
+                }
+
+                #moniter .cls-1 {
+                    stroke-miterlimit: 10;
+                }
+
+                #moniter .cls-2 {
+                    stroke-linejoin: round;
+                }
+            </style>
+        </defs>
+        <path id="moniter2" class="cls-1" d="M323.52,6.5H41.11s-34.59-1-34.59,37V335.16s-2,35.84,30,35.84h346" />
+        <line id="moniter1" class="cls-1" x1="95.02" y1="307" x2="7.52" y2="306.92" />
+        <path id="moniter3" class="cls-1" d="M352.07,6.5H474.16s29.36,0,29.36,32V336.13S506.52,371,471,371H412.07" />
+        <line id="moniter4" class="cls-1" x1="125.11" y1="307" x2="503.52" y2="307" />
+        <line id="moniter-floor" class="cls-1" x1="166.54" y1="443.65" x2="344.2" y2="443.65" />
+        <path id="leg-left" class="cls-1" d="M210.14,371,202,443.65Z" />
+        <path id="leg-right" class="cls-1" d="M309.14,443.65,301,371Z" />
+        <line id="display-line4" class="cls-1" x1="337.46" y1="101.51" x2="457.46" y2="101.51" />
+        <line id="display-line3" class="cls-1" x1="337.52" y1="146.5" x2="457.52" y2="146.5" />
+        <line id="display-line2" class="cls-1" x1="337.52" y1="191.5" x2="457.52" y2="191.5" />
+        <line id="display-line1" class="cls-1" x1="337.52" y1="236.5" x2="457.52" y2="236.5" />
+        <rect id="display-chart1" class="cls-2" x="64.52" y="180.13" width="43.89" height="71.37" />
+        <rect id="display-chart2" class="cls-2" x="144.52" y="136" width="43.89" height="115.5" />
+        <polygon id="display-chart3" class="cls-2"
+            points="227.53 251.5 271.42 251.5 271.42 109.03 289.46 109.03 249.42 68.99 209.75 108.65 226.88 108.65 227.53 251.5" />
+    </svg>
+
+    <style>
+        #moniter1,
+        #leg-left,
+        #leg-right {
+            stroke-dasharray: 520;
+            stroke-dashoffset: -520;
+            animation: m3Line 2s cubic-bezier(0.76, 0, 0.24, 1) 0s forwards;
+        }
+
+        #moniter-floor,
+        #display-line1,
+        #display-line2,
+        #display-line3,
+        #display-line4 {
+            stroke-dasharray: 200;
+            stroke-dashoffset: 200;
+        }
+
+        #moniter-floor {
+            animation: m4Line .5s cubic-bezier(0.76, 0, 0.24, 1) 0s forwards;
+        }
+
+        #display-line1 {
+            animation: m5Line .5s cubic-bezier(0.76, 0, 0.24, 1) .1s forwards;
+        }
+
+        #display-line2 {
+            animation: m6Line .5s cubic-bezier(0.76, 0, 0.24, 1) .2s forwards;
+        }
+
+        #display-line3 {
+            animation: m7Line .5s cubic-bezier(0.76, 0, 0.24, 1) .3s forwards;
+        }
+
+        #display-line4 {
+            animation: m8Line .5s cubic-bezier(0.76, 0, 0.24, 1) .4s forwards;
+        }
+
+        #moniter4 {
+            stroke-dasharray: 1050;
+            stroke-dashoffset: -1030;
+            animation: m1Line 2s cubic-bezier(0.76, 0, 0.24, 1) 0s forwards;
+        }
+
+        #moniter2 {
+            stroke-dasharray: 1030;
+            stroke-dashoffset: -1030;
+            animation: m1Line 2s cubic-bezier(0.76, 0, 0.24, 1) 0s forwards;
+        }
+
+        #moniter3 {
+            stroke-dasharray: 582;
+            stroke-dashoffset: 582;
+            animation: m2Line 2s cubic-bezier(0.76, 0, 0.24, 1) 0s forwards;
+        }
+
+        @keyframes m1Line {
+            from {
+                stroke-dashoffset: -1030px;
+            }
+
+            to {
+                stroke-dashoffset: 0;
+            }
+        }
+
+        @keyframes m2Line {
+            from {
+                stroke-dashoffset: 582px;
+            }
+
+            to {
+                stroke-dashoffset: 0;
+            }
+        }
+
+        @keyframes m3Line {
+            from {
+                stroke-dashoffset: -520px;
+            }
+
+            to {
+                stroke-dashoffset: 0;
+            }
+        }
+
+        @keyframes m4Line {
+            from {
+                stroke-dashoffset: 200px;
+            }
+
+            to {
+                stroke-dashoffset: 0;
+            }
+        }
+
+        @keyframes m5Line {
+            from {
+                stroke-dashoffset: 200px;
+            }
+
+            to {
+                stroke-dashoffset: 0;
+            }
+        }
+
+        @keyframes m6Line {
+            from {
+                stroke-dashoffset: 200px;
+            }
+
+            to {
+                stroke-dashoffset: 0;
+            }
+        }
+
+        @keyframes m7Line {
+            from {
+                stroke-dashoffset: 200px;
+            }
+
+            to {
+                stroke-dashoffset: 0;
+            }
+        }
+
+        @keyframes m8Line {
+            from {
+                stroke-dashoffset: 200px;
+            }
+
+            to {
+                stroke-dashoffset: 0;
+            }
+        }
+    </style>
+
+    <svg id="social-media" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 215.5 215.96" width="50" height="auto">
+        <defs>
+            <style>
+                #social-media .cls-1,
+                #social-media .cls-2 {
+                    fill: none;
+                    stroke: #000;
+                    stroke-linecap: round;
+                    stroke-width: 6px;
+                }
+
+                #social-media .cls-1 {
+                    stroke-miterlimit: 10;
+                }
+
+                #social-media .cls-2 {
+                    stroke-linejoin: round;
+                }
+            </style>
+        </defs>
+        <path id="circle1" class="cls-1" d="M62.4,75.25A39,39,0,1,1,81,42s1.5,12.5-8.5,24.5" />
+        <path id="circle2" class="cls-1" d="M6.68,190.43a39,39,0,1,1,30.91,22.28s-12.59.06-23.37-11.25" />
+        <circle id="circle3" class="cls-1" cx="173.5" cy="42.5" r="39" />
+        <circle id="circle4" class="cls-1" cx="173.5" cy="173.5" r="39" />
+        <polyline id="siren_stick" class="cls-2"
+            points="91.5 139.5 91.5 116.11 99.54 116.11 99.54 92.89 82.59 92.89 82.59 116.2 91.5 116.11" />
+        <line id="siren1" class="cls-2" x1="122.5" y1="122.5" x2="130.5" y2="126.5" />
+        <line id="siren2" class="cls-2" x1="130.5" y1="130.72" x2="130.5" y2="78.8" />
+        <path id="siren3" class="cls-2" d="M130.5,81.5s-17,10-30,13" />
+        <line id="siren4" class="cls-2" x1="100.5" y1="114.54" x2="109.5" y2="117.5" />
+        <path id="body_circle1" class="cls-2" d="M30.35,81s-8.15,26.5,0,53.5" />
+        <path id="body_circle2" class="cls-2" d="M80.79,184.94s26.5,8.15,53.5,0" />
+        <path id="body_circle3" class="cls-2" d="M184.72,134.5s8.16-26.5,0-53.5" />
+        <path id="body_circle4" class="cls-2" d="M134.29,30.56s-26.5-8.15-53.5,0" />
+        <polygon id="youtube" class="cls-2" points="34.5 160.5 34.5 186.75 57.56 173.63 34.5 160.5" />
+        <circle id="insta1" class="cls-2" cx="173.5" cy="173.5" r="7" />
+        <rect id="insta2" class="cls-2" x="154.5" y="154.5" width="38" height="38" />
+        <path id="facebook1" class="cls-2" d="M181.5,20.5s-11-2-11,13v30" />
+        <line id="facebook2" class="cls-2" x1="163.39" y1="41.94" x2="178.65" y2="41.94" />
+        <path id="twitter" class="cls-2"
+            d="M61.59,26.94l-3.26,3.62S59.5,45.5,49.5,54.5s-28,3-28,3,10-3,10-4-15-10-8-24c0,0,11,10,16,7,0,0,4-15,16-8Z" />
+    </svg>
+
+    <style>
+        #social-media #circle1,
+        #social-media #circle2,
+        #social-media #circle3,
+        #social-media #circle4 {
+            stroke-dasharray: 250;
+            stroke-dashoffset: 250;
+            animation: socialAnime 1.5s cubic-bezier(0.76, 0, 0.24, 1) forwards;
+        }
+
+        @keyframes socialAnime {
+            from {
+                stroke-dashoffset: 250px;
+            }
+
+            to {
+                stroke-dashoffset: 0;
+            }
+        }
+    </style>
+
+    <svg id="line-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 81.21 14.85" width="20" height="auto">
+        <defs>
+            <style>
+                .cls-1 {
+                    fill: none;
+                    stroke: #000;
+                    stroke-miterlimit: 20;
+                }
+            </style>
+        </defs>
+        <polyline class="cls-1" points="0 0.5 80 0.5 65.89 14.5" />
+    </svg>
+
+    <style>
+        #line-arrow .cls-1 {
+            stroke-dasharray: 100;
+            stroke-dashoffset: 100;
+            animation: lineArrow .5s cubic-bezier(0.76, 0, 0.24, 1) 0s forwards;
+        }
+
+        @keyframes lineArrow {
+            from {
+                stroke-dashoffset: 100
+            }
+
+            to {
+                stroke-dashoffset: 0
+            }
+        }
+    </style>
+
+</body>
+
+</html>
