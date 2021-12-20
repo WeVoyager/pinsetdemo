@@ -1,0 +1,63 @@
+.service-content__detail__subtitle {
+  margin-top: 50px;
+}
+
+.service-content__detail__subtitle span {
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+.detail__text-area1__text-area1,
+.detail__text-area1__text-area2,
+.detail__text-area1__text-area3,
+.detail__text-area1__text-area6,
+.detail__text-area1__text-area7 {
+  margin-top: 50px;
+}
+
+.detail__text-area1__text-area1 p,
+.detail__text-area1__text-area2 p,
+.detail__text-area1__text-area3 p,
+.detail__text-area1__text-area6 p,
+.detail__text-area1__text-area7 p {
+  margin-bottom: 10px;
+}
+
+.detail__text-area1__text-area1 p:last-child,
+.detail__text-area1__text-area2 p:last-child,
+.detail__text-area1__text-area3 p:last-child,
+.detail__text-area1__text-area6 p:last-child,
+.detail__text-area1__text-area7 p:last-child {
+  margin: 0;
+}
+
+.detail__text-area1__text-area1 p span,
+.detail__text-area1__text-area2 p span,
+.detail__text-area1__text-area3 p span,
+.detail__text-area1__text-area6 p span,
+.detail__text-area1__text-area7 p span {
+  font-size: 1.8rem;
+}
+
+.detail__text-area1__text-area4 {
+  margin-top: 50px;
+}
+
+.detail__text-area1__text-area4 p span {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.service-content__detail__img-area {
+  margin: 50px 0;
+}
+
+.detail__text-area1__text-area7 p:nth-of-type(3) {
+  margin-bottom: 50px;
+}
+
+.detail__text-area1__text-area7 p:last-child span a {
+  color: #000;
+  font-weight: 700;
+}
+/*# sourceMappingURL=service-academy.css.map */

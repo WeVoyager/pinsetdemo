@@ -1,0 +1,132 @@
+.service-content__detail__subtitle {
+  margin-top: 50px;
+}
+
+.service-content__detail__subtitle span {
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+.detail__text-area1__text-area1 {
+  margin-top: 50px;
+}
+
+.detail__text-area1__text-area1 p:first-child {
+  margin-bottom: 10px;
+}
+
+.detail__text-area1__text-area1 p span {
+  font-size: 1.8rem;
+}
+
+.detail__text-area1__text-area2 {
+  margin-top: 50px;
+}
+
+.detail__text-area1__text-area2 p {
+  margin-bottom: 10px;
+}
+
+.detail__text-area1__text-area2 p:first-child {
+  margin-bottom: 20px;
+}
+
+.detail__text-area1__text-area2 p:first-child span {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.detail__text-area1__text-area2 p:last-child {
+  margin: 0;
+}
+
+.detail__text-area1__text-area2 p span {
+  font-size: 1.8rem;
+}
+
+.detail__text-area1__text-area3 {
+  margin-top: 50px;
+}
+
+.detail__text-area1__text-area3 p:first-child {
+  margin-bottom: 10px;
+}
+
+.detail__text-area1__text-area3 p span {
+  font-size: 1.8rem;
+}
+
+.detail__text-area1__text-area4 {
+  margin-top: 50px;
+}
+
+.detail__text-area1__text-area4 p {
+  margin-bottom: 10px;
+}
+
+.detail__text-area1__text-area4 p:last-child {
+  margin: 0;
+}
+
+.detail__text-area1__text-area4 p span {
+  font-size: 1.8rem;
+}
+
+.detail__text-area1__text-area5 {
+  margin-top: 50px;
+}
+
+.detail__text-area1__text-area5 p {
+  margin-bottom: 10px;
+}
+
+.detail__text-area1__text-area5 p:nth-of-type(2) {
+  margin-bottom: 50px;
+}
+
+.detail__text-area1__text-area5 p:last-child {
+  margin: 0;
+}
+
+.detail__text-area1__text-area5 p span {
+  font-size: 1.8rem;
+}
+
+.service-content__detail__img-area {
+  margin: 50px 0 20px 0;
+}
+
+.detail__text-area1__text-area6 p span,
+.detail__text-area1__text-area7 p span {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.detail__text-area2__text-area1,
+.detail__text-area2__text-area2,
+.detail__text-area2__text-area3 {
+  margin-top: 50px;
+}
+
+.detail__text-area2__text-area1 p,
+.detail__text-area2__text-area2 p,
+.detail__text-area2__text-area3 p {
+  margin-bottom: 10px;
+}
+
+.detail__text-area2__text-area1 p:last-child,
+.detail__text-area2__text-area2 p:last-child,
+.detail__text-area2__text-area3 p:last-child {
+  margin: 0;
+}
+
+.detail__text-area2__text-area1 p span,
+.detail__text-area2__text-area2 p span,
+.detail__text-area2__text-area3 p span {
+  font-size: 1.8rem;
+}
+
+.detail__text-area2__text-area3 p:nth-of-type(2) {
+  margin-bottom: 50px;
+}
+/*# sourceMappingURL=service-youtube.css.map */

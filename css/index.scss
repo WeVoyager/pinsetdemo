@@ -1,0 +1,1012 @@
+@import 'common.scss';
+
+// ----- 랜딩페이지 ----- //
+.main {
+    transition: .5s;
+    width: 100%;
+}
+
+#main__section1 {
+    width: 100%;
+    height: 100vh;
+}
+
+.section1__bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    z-index: 9;
+}
+
+.section1__bg-shadow {
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background: #fff;
+    opacity: .5;
+    position: absolute;
+}
+
+.section1__bg__bg-cont {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    will-change: transform;
+
+    img{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+.section1__guide-box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 11;
+    height: 100%;
+}
+
+.section1__title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.section1__title__text1 {
+    font-size: 15rem;
+    font-weight: 700;
+    padding-right: 10px;
+}
+
+.section1__title__text2 {
+    display: flex;
+    flex-direction: column;
+
+    span {
+        font-size: 5.2rem;
+
+        &:first-child {
+            font-weight: 700;
+        }
+    }
+}
+
+.subtitle__text-change-box {
+    display: block;
+    text-align: center;
+
+    span {
+        display: inline-block;
+        font-size: 3.6em;
+        font-weight: 700;
+    }
+}
+
+.section1__intro-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.intro-btn__intro-text {
+    font-size: 2rem;
+    padding-bottom: 10px;
+}
+
+.intro-btn__button {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+
+}
+
+.intro-btn__button:hover {
+    .button__line-top {
+        top: 0;
+        left: -100%
+    }
+
+    .button__line-bottom {
+        bottom: 0;
+        right: -100%
+    }
+
+    .button__line-left {
+        top: -100%;
+        left: 0
+    }
+
+    .button__line-right {
+        bottom: -100%;
+        right: 0
+    }
+
+    .button__text__view-text {
+        opacity: 0;
+        transform: rotateX(-90deg) translateY(-100%);
+    }
+
+    .button__text__hover-text {
+        transform: translate(-50%, 0) rotateX(0);
+        opacity: 1;
+    }
+}
+
+.button__text {
+    display: inline-block;
+    font-size: 1.6rem;
+    position: relative;
+    overflow: hidden;
+    padding: 10px 20px;
+}
+
+.button__line-top,
+.button__line-bottom,
+.button__line-left,
+.button__line-right {
+    display: inline-block;
+    position: absolute;
+    transition: cubic-bezier(0.76, 0, 0.24, 1) .5s;
+}
+
+.button__line-top,
+.button__line-bottom {
+    width: 100%;
+    height: 1px;
+    background: #000;
+}
+
+.button__line-top {
+    top: 0;
+    left: 0;
+}
+
+.button__line-bottom {
+    bottom: 0;
+    right: 0;
+}
+
+.button__line-left,
+.button__line-right {
+    width: 1px;
+    height: 100%;
+    background: #000;
+}
+
+.button__line-left {
+    top: 0;
+    left: 0;
+}
+
+.button__line-right {
+    bottom: 0;
+    right: 0;
+}
+
+.button__text__hover-text,
+.button__text__view-text {
+    display: inline-block;
+    transition: cubic-bezier(0.76, 0, 0.24, 1) .5s;
+}
+
+.button__text__hover-text {
+    position: absolute;
+    white-space: nowrap;
+    left: 50%;
+    transform: translate(-50%, 100%) rotateX(90deg);
+    opacity: 0;
+}
+
+// ----- 랜딩페이지 ----- //
+
+// ----- sticky 컨텐츠 ----- //
+
+.hooking-content {
+    width: 100%;
+    height: 3100px;
+}
+
+.hooking-content__sticky {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+.hooking-content__sticky__slide-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide-default {
+    position: absolute;
+    text-align: center;
+    font-size: 4.8rem;
+    display: none;
+    transition: cubic-bezier(0, 0.7, 1, 0.3) .1s;
+    // justify-content: center;
+    // align-items: center;
+}
+
+.slide-default.enabled {
+    display: block;
+}
+
+// ----- sticky 컨텐츠 ----- //
+
+// ----- 커리어 ----- //
+
+.cp-text {
+    span {
+        clip-path: inset(0 100% 0 0);
+        transition: cubic-bezier(0.76, 0, 0.24, 1) 1.5s;
+    }
+
+    &.cp-off {
+        span {
+            clip-path: inset(0 0 0 0);
+        }
+    }
+}
+
+.cp-img {
+    img {
+        clip-path: inset(0 0 100% 0);
+        transition: cubic-bezier(0.76, 0, 0.24, 1) 1.5s;
+    }
+
+    &.cp-off {
+        img {
+            clip-path: inset(0 0 0 0);
+        }
+    }
+}
+
+.pinset-career__title {
+    text-align: center;
+    font-size: 3.6rem;
+    padding-bottom: 50px;
+}
+
+.pinset-career__content {
+    display: flex;
+    justify-content: space-around;
+}
+
+.pinset-career__content__pinset-academy,
+.pinset-career__content__maketer-education {
+    display: inline-block;
+    text-align: center;
+    width: 45%;
+
+    img{
+        width: 100%;
+    }
+}
+
+.pinset-career__content__pinset-academy {
+    margin-top: 100px;
+}
+
+.pinset-academy__img,
+.marketer-education__img {
+    line-height: 0;
+}
+
+.pinset-career__text-default {
+    h2 {
+        span {
+            font: 700 3.6rem 'Noto Sans KR';
+        }
+
+        padding-bottom: 10px;
+    }
+
+    p {
+        span {
+            display: block;
+            font-size: 1.8rem;
+            padding-bottom: 10px;
+        }
+    }
+}
+
+// ----- 커리어 ----- //
+
+// ----- 바쁜 이유 ----- //
+
+.busy-reason {
+    width: 100%;
+    height: 4600px;
+}
+
+.busy-reason__sticky {
+    width: 100%;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+}
+
+.busy-reason__sticky__slide-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.br-slide1 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.br-slide1__text-area {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.br-slide1__text-area__text1,
+.br-slide1__text-area__text2,
+.br-slide1__text-area__text3 {
+    position: absolute;
+    font-size: 4.8rem;
+}
+
+.br-slide1__text-area__text4,
+.br-slide1__text-area__text5 {
+    position: absolute;
+    white-space: nowrap;
+}
+
+.pin__effect1 {
+    display: inline-block;
+}
+
+.t-box__text1,
+.t-box__text2 {
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.br-slide1__text-area__text4 {
+    font-size: 4.8rem;
+    text-align: center;
+}
+
+// ----- 바쁜 이유 ----- //
+
+// ----- 컬럼 ----- //
+
+.marketing-case {
+    margin-bottom: 500px;
+}
+
+.marketing-case__title {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.marketing-case__title__main-title {
+    font-size: 3.6rem;
+    padding-bottom: 5px;
+}
+
+.marketing-case__title__sub-title {
+    font-size: 2rem;
+}
+
+.marketing-case__content {
+    display: flex;
+    justify-content: space-around;
+}
+
+.marketing-case__content__opening-marketing,
+.marketing-case__content__blog-marketing{
+    width: 45%;
+
+    img{
+        width: 100%;
+    }
+}
+
+.marketing-case__text-default {
+    h3 {
+        padding: 10px 0;
+
+        span {
+            font-size: 1.8rem;
+            font-weight: 700;
+        }
+    }
+
+    p {
+        span {
+            font-size: 1.6rem;
+            vertical-align: middle;
+        }
+    }
+
+    img{
+        width: 14px; height: auto;
+    }
+}
+
+.opening-marketing__img,
+.blog-marketing__img {
+    line-height: 0;
+    position: relative;
+    cursor: pointer;
+
+    &:hover{
+        .marketing-case__img-shadow{
+            opacity: 0.5;
+        }
+    }
+}
+
+.marketing-case__img-shadow{
+    position: absolute;
+    width: 100%; height: 100%;
+    top: 0; left: 0;
+    background: #000;
+    opacity: 0;
+    transition: .5s;
+}
+
+.marketing-case__content__blog-marketing {
+    margin-top: 100px;
+}
+
+// ----- 컬럼 ----- //
+
+// ----- M.VIP, 핀셋아카데미 리뷰 ----- //
+
+.education-review {
+    margin-bottom: 500px;
+}
+
+.education-review__title {
+    font-size: 3.6rem;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.education-review__subtitle {
+    font-size: 2rem;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+.education-review__review-img-container {
+    width: 100%;
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.column__default {
+    flex-grow: 0;
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px;
+
+    li {
+        width: 100%;
+        margin-bottom: 20px;
+        line-height: 0;
+
+        img {
+            width: 100%;
+            border: solid 1px #eee;
+        }
+    }
+}
+
+// ----- M.VIP, 핀셋아카데미 리뷰 ----- //
+
+// ----- 차별화된 포트폴리오 ----- //
+
+.different-portfolio {
+    margin-bottom: 500px;
+}
+
+.different-portfolio__title {
+    text-align: center;
+    font-size: 3.6rem;
+    padding-bottom: 10px;
+}
+
+.different-portfolio__subtitle {
+    text-align: center;
+    font-size: 2rem;
+
+    &:nth-of-type(3) {
+        padding-bottom: 30px;
+    }
+}
+
+.subtitle__text1 {
+    display: inline-block;
+}
+
+// .subtitle__text2{}
+
+.different-portfolio__content__title,
+.different-portfolio__content__text {
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.different-portfolio__content__text {
+    span {
+        display: inline-block;
+        padding-bottom: 20px;
+    }
+}
+
+.different-portfolio__content__charge-company {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 0;
+}
+
+.charge-company_content1,
+.charge-company_content2,
+.charge-company_content3 {
+    position: relative;
+
+    &::after {
+        position: absolute;
+        display: inline-block;
+        content: '';
+        width: 1px;
+        height: 0;
+        background: #000;
+        right: 0;
+        top: 0;
+        transition: cubic-bezier(0.76, 0, 0.24, 1) 1s;
+    }
+
+    &.animation {
+        &::after {
+            height: 100%;
+        }
+    }
+}
+
+.charge-company_content4{
+    position: relative;
+
+    &::after{
+        display: inline-block;
+        content: '';
+        position: absolute;
+        top: 0; left: 0;
+        width: 0; height: 1px;
+        background: #000;
+        transition: cubic-bezier(0.76, 0, 0.24, 1) 1s;
+    }
+}
+
+.charge-company__default {
+    text-align: center;
+    flex: 1 1 25%;
+    padding: 30px 0;
+
+    img {
+        width: 70px;
+        height: auto;
+    }
+
+    p {
+        font-size: 1.6rem;
+        text-align: center;
+        padding-top: 10px;
+    }
+}
+
+// ----- 차별화된 포트폴리오 ----- //
+
+// ----- 마케팅 상품 ----- //
+
+.cp-div {
+    .cp-active {
+        transition: cubic-bezier(0.76, 0, 0.24, 1) 1s;
+        clip-path: inset(0 0 100% 0);
+
+        .cp-active__text {
+
+            span,
+            a {
+                transition: cubic-bezier(0.76, 0, 0.24, 1) 1s;
+                clip-path: inset(0 100% 0 0);
+            }
+        }
+    }
+
+    &.cp-off {
+        .cp-active {
+            clip-path: inset(0 0 0 0);
+
+            .cp-active__text.cp-off-text {
+
+                span,
+                a {
+                    clip-path: inset(0 0 0 0);
+                }
+            }
+        }
+    }
+}
+
+.sales-up {
+    margin-bottom: 300px;
+}
+
+.sales-up__title {
+    text-align: center;
+    font-size: 3.6rem;
+    margin-bottom: 20px;
+}
+
+.sales-up__promotion-package {
+    width: 960px;
+    margin: 0 auto;
+    color: #fff;
+    display: table;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+
+    &:hover {
+        .promotion-package__background {
+            backdrop-filter: blur(4px);
+        }
+    }
+}
+
+.sales-up__promotion-package__cont {
+    background: url('../img/package-bg1.jpg') no-repeat center;
+    border-radius: 10px;
+    padding: 30px 0;
+}
+
+.promotion-package__text-container {
+    position: relative;
+    z-index: 2;
+}
+
+.promotion-package__title {
+    font-size: 2.4rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.promotion-package__text,
+.marketing-package__viewmore-btn {
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+.promotion-package__text {
+    &:last-child {
+        margin-top: 20px;
+    }
+}
+
+.marketing-package__viewmore-btn {
+    display: inline-block;
+    color: #fff;
+    font-weight: 700;
+}
+
+.promotion-package__background {
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    display: table-cell;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: .5s;
+}
+
+.single-promotion {
+    text-align: center;
+    width: 960px;
+    margin: 0 auto;
+}
+
+.single-promotion__title {
+    font-size: 2.4rem;
+    padding: 30px 0 20px 0;
+
+    span {
+        font-weight: 700;
+    }
+}
+
+.single-promotion__menu {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+    li {
+        font-size: 1.4rem;
+        text-align: center;
+        width: 16%;
+        transition: .3s;
+        cursor: pointer;
+
+        span {
+            border-radius: 10px;
+            position: relative;
+            display: block;
+            padding: 20px 0;
+            transition: all cubic-bezier(0.76, 0, 0.24, 1) 1.5s, color .5s;
+            font-weight: 700;
+            overflow: hidden;
+            color: #767676;
+
+            &::after {
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: inline-block;
+                content: '';
+                width: 100%;
+                height: 100%;
+                box-shadow: inset 4px 4px 7px -1px rgba(0, 0, 0, 0.5);
+                opacity: 0;
+                transition: .3s;
+            }
+        }
+
+        &:hover {
+
+            span {
+                color: #000;
+
+                &::after {
+                    opacity: 1;
+                }
+            }
+        }
+
+        &.active {
+
+            span {
+                color: #000;
+
+                &::after {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+.single-promotion__detail {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+
+    &:hover {
+        .single-promotion__detail__background {
+            backdrop-filter: blur(5px);
+        }
+    }
+}
+
+.single-promotion__detail__cont {
+    width: 100%;
+    height: 100%;
+    background: url('../img/package-bg2.jpg') no-repeat center / 100% 100%;
+}
+
+.single-promotion__detail__background {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    transition: .5s;
+}
+
+.single-promotion__detail__text-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+.single-promotion__detail__title,
+.single-promotion__detail__text-area,
+.single-promotion__detail__viewmore-btn {
+    color: #fff;
+}
+
+.single-promotion__detail__title {
+    font-size: 2.4rem;
+    margin-bottom: 20px;
+}
+
+.single-promotion__detail__text-area {
+    span {
+        display: inline-block;
+        font-size: 1.6rem;
+        margin-bottom: 10px;
+    }
+}
+
+.single-promotion__detail__viewmore-btn {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    font-size: 1.6rem;
+}
+
+// ----- 마케팅 상품 ----- //
+
+// ----- 핀셋마케팅 소개 ----- //
+
+.question {
+    margin-bottom: 200px;
+}
+
+.question__title {
+    font-size: 3.6rem;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.question__history {
+    text-align: center;
+    margin-bottom: 200px;
+
+    img {
+        width: 310px;
+        height: 500px;
+        margin-bottom: 20px;
+    }
+}
+
+.history__text {
+    font-size: 1.8rem;
+}
+
+.question__moneytaker {
+    margin-bottom: 200px;
+}
+
+.question__moneytaker,
+.question__proof {
+    img {
+        width: 150px;
+        height: auto;
+    }
+}
+
+.question__moneytaker__title {
+    font-size: 3.6rem;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.link__default {
+    cursor: pointer;
+    margin: 0 20px;
+    transition: .3s;
+    border-radius: 10px;
+
+    &>div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+        border-radius: 10px;
+        transition: all cubic-bezier(0.76, 0, 0.24, 1) 1.5s, box-shadow .3s;
+        clip-path: inset(0 0 100% 0);
+    }
+
+    &.cp-off {
+        &>div {
+            clip-path: inset(0 0 0 0);
+        }
+    }
+
+    &.shadow {
+        box-shadow: 5px 5px 7px -5px rgba(0, 0, 0, 0.5);
+
+        &:hover {
+            box-shadow: 5px 5px 7px -1px rgba(0, 0, 0, 0.5);
+        }
+    }
+
+    .link__img-area {
+        padding: 50px 50px;
+        position: relative;
+
+        object {
+            width: 20px;
+            height: auto;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+
+        line-height: 0;
+        letter-spacing: 0;
+    }
+
+    p {
+        width: 100%;
+        font-size: 1.4rem;
+        font-weight: 700;
+        text-align: center;
+        padding: 20px 0;
+        background: #fff;
+    }
+}
+
+.question__moneytaker__link {
+    display: flex;
+    justify-content: center;
+}
+
+.moneytaker__link__youtube {
+    background: #cc202d;
+}
+
+.moneytaker__link__business {
+    background: #fec502;
+}
+
+
+// .question__proof{}
+
+.question__proof__title {
+    font-size: 3.6rem;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.question__proof__link {
+    display: flex;
+    justify-content: center;
+}
+
+.proof__link__mvip {
+    background: #4d56b2;
+}
+
+.proof__link__academy {
+    background: #e84d2a;
+}
+
+// ----- 핀셋마케팅 소개 ----- //

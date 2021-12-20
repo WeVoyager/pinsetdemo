@@ -1,0 +1,82 @@
+.service-content__detail__subtitle {
+  margin-top: 50px;
+}
+
+.service-content__detail__subtitle span {
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+.service-content__detail__text-area1 {
+  margin-top: 50px;
+}
+
+.service-content__detail__text-area1 p span {
+  font-size: 1.8rem;
+}
+
+.service-content__detail__text-area1 p:first-child {
+  margin-bottom: 10px;
+}
+
+.popular-reason {
+  margin-top: 50px;
+}
+
+.popular-reason > p:first-child span {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.service-content__detail__img-area {
+  margin: 50px 0;
+}
+
+.service-content__detail__text-area2 p span {
+  font-size: 1.8rem;
+}
+
+.detail__text-area2__text-area p {
+  margin-bottom: 10px;
+}
+
+.detail__text-area2__text-area p:last-child {
+  margin: 0;
+}
+
+.detail__text-area2__text-area2 {
+  margin-top: 50px;
+}
+
+.detail__text-area2__text-area2 p {
+  margin-bottom: 10px;
+}
+
+.detail__text-area2__text-area2 p:first-child {
+  margin-bottom: 20px;
+}
+
+.detail__text-area2__text-area2 p:first-child span {
+  font-size: 2.4rem;
+}
+
+.detail__text-area2__text-area2 p:last-child {
+  margin: 0;
+}
+
+.detail__text-area2__text-area3 {
+  margin-top: 50px;
+}
+
+.detail__text-area2__text-area3 p:first-child {
+  margin-bottom: 10px;
+}
+
+.detail__text-area2__text-area4 {
+  margin-top: 50px;
+}
+
+.detail__text-area2__text-area4 p:first-child {
+  margin-bottom: 10px;
+}
+/*# sourceMappingURL=service-blog.css.map */

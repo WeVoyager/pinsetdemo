@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/contact.css">
+    <link rel="stylesheet" type="text/css" href="css/media-query.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/variable/pretendardvariable.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+    <title>핀셋마케팅 | 온라인 마케팅</title>
+</head>
+
+<body>
+    <header>
+        <p class="header__box">
+            <a href="index.html" class="header__logo">PINSET MARKETING</a>
+            <span class="header__nav-box">
+                <a href="company.html" class="header__nav-box__company">회사소개</a>
+                <span class="header__nav-box__service">
+                    <span>서비스소개</span>
+                    <span class="service__list">
+                        <a href="service-package.html"><span>핀셋 통합 마케팅</span></a>
+                        <a href="service-blog.html"><span>핀셋 브랜드 블로그</span></a>
+                        <a href="service-pr.html"><span>핀셋 홍보단</span></a>
+                        <a href="service-youtube.html"><span>핀셋 유튜브 브랜딩</span></a>
+                        <a href="service-keywords.html"><span>핀셋 키워드 광고</span></a>
+                        <a href="service-homepage.html"><span>핀셋 홈페이지 제작</span></a>
+                        <a href="service-academy.html"><span>핀셋 아카데미</span></a>
+                    </span>
+                </span>
+                <!-- <a href="" class="header__nav-box__education">포트폴리오</a> -->
+                <!-- <a href="" class="header__nav-box__academy">아카데미</a> -->
+                <a href="contact.html" class="header__nav-box__contact">문의하기</a>
+            </span>
+            <span class="burger-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </span>
+        </p>
+    </header>
+
+    <div class="burger-menu">
+        <div class="burger-menu__hidden-cont">
+            <a class="hidden-cont__list eff-list" href="">
+                <span>회사소개</span>
+            </a>
+            <div class="hidden-cont__list service eff-list">
+                <span>서비스소개</span>
+            </div>
+            <div class="service__sub-menu">
+                <p class="sub-menu"><a href="service-blog.html">핀셋 브랜드 블로그</a></p>
+                <p class="sub-menu"><a href="service-pr.html">핀셋 홍보단</a></p>
+                <p class="sub-menu"><a href="service-youtube.html">핀셋 유튜브 브랜딩</a></p>
+                <p class="sub-menu"><a href="service-keywords.html">핀셋 키워드 광고</a></p>
+                <p class="sub-menu"><a href="service-homepage.html">핀셋 홈페이지 제작</a></p>
+                <p class="sub-menu"><a href="service-academy.html">핀셋 아카데미 교육</a></p>
+            </div>
+            <!-- <a class="hidden-cont__list eff-list" href="">
+                <span>포트폴리오</span>
+            </a>
+            <a class="hidden-cont__list eff-list" href="">
+                <span>아카데미</span>
+            </a> -->
+            <a class="hidden-cont__list eff-list" href="">
+                <span>문의하기</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="contact">
+        <div class="contact__banner">
+            <video src="video/contact-bg.mp4" class="banner__video" loop autoplay muted></video>
+            <div class="banner__filter"></div>
+        </div>
+        <div class="empty__cont"></div>
+        <div class="form-cont">
+            <div class="form-cont__area">
+                <h2><span>Contact Us</span></h2>
+                <form action="" class="gform" method="POST" id="customer-info" autocomplete="off">
+                    <div class="contact-cont">
+                        <div class="company-info form__default">
+                            <h3 class="company-info__title"><span>업체 정보</span></h3>
+                            <div class="company-info__area">
+                                <label for="username" class="company-info__name">이름 *</label>
+                                <input type="text" name="username" id="username" placeholder="이름을 입력해주세요." autocomplete="off">
+                            </div>
+                            <div class="company-info__area">
+                                <label for="companyName" class="company-info__companyName">업체명 *</label>
+                                <input type="text" name="companyName" id="companyName" placeholder="업체명을 적어주세요." autocomplete="off">
+                            </div>
+                            <div class="company-info__area">
+                                <label for="phone" class="company-info__number">연락처 *</label>
+                                <input type="tel" name="phone" id="phone" placeholder="010-0000-0000" autocomplete="off">
+                            </div>
+                            <div class="company-info__area">
+                                <label for="website" class="company-info__website">사이트 주소</label>
+                                <input type="text" name="website" id="website" placeholder="마케팅에 참고하겠습니다." autocomplete="false">
+                            </div>
+                        </div>
+                        <div class="marketing-service form__default">
+                            <h3 class="marketing-service__title"><span>문의하고 싶은 마케팅 상품을 선택해주세요. (복수 선택 가능)</span></h3>
+                            <div class="checkbox-area">
+                                <div class="checkbox-area__package">
+                                    <label for="package" class="package__check">핀셋 통합 마케팅</label>
+                                    <input type="checkbox" name="package" id="package" value="핀셋 통합 마케팅">
+                                </div>
+                                <div class="checkbox-area__blog">
+                                    <label for="blog" class="blog__check">핀셋 브랜드 블로그</label>
+                                    <input type="checkbox" name="blog" id="blog" value="핀셋 브랜드 블로그">
+                                </div>
+                                <div class="checkbox-area__youtube">
+                                    <label for="youtube" class="youtube__check">핀셋 유튜브 브랜딩</label>
+                                    <input type="checkbox" name="youtube" id="youtube" value="핀셋 유튜브 브랜딩">
+                                </div>
+                                <div class="checkbox-area__pr">
+                                    <label for="pr" class="pr__check">핀셋 홍보단</label>
+                                    <input type="checkbox" name="pr" id="pr" value="핀셋 홍보단">
+                                </div>
+                                <div class="checkbox-area__keywords">
+                                    <label for="keywords" class="keywords__check">핀셋 키워드 광고</label>
+                                    <input type="checkbox" name="keywords" id="keywords" value="핀셋 키워드 광고">
+                                </div>
+                                <div class="checkbox-area__homepage">
+                                    <label for="homepage" class="homepage__check">핀셋 홈페이지 제작</label>
+                                    <input type="checkbox" name="homepage" id="homepage" value="핀셋 홈페이지 제작">
+                                </div>
+                                <div class="checkbox-area__academy">
+                                    <label for="academy" class="academy__check">핀셋 아카데미 교육</label>
+                                    <input type="checkbox" name="academy" id="academy" value="핀셋 아카데미 교육">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="budget form__default">
+                            <h3 class="budget__title"><span>마케팅 진행에 있어서 생각한 예산을 선택해주세요.<br></span></h3>
+                            <div class="budget__area">
+                                <div class="input-area">
+                                    <input type="text" name="budget" id="budget" readonly placeholder="생각한 예산을 선택해주세요.">
+                                    <span class="arrow"><img src="img/icon/arrow.svg" alt="화살표 모양 버튼"></span>
+                                </div>
+                                <ul class="budget__list-area">
+                                    <li class="budget__list">200만 원 이하</li>
+                                    <li class="budget__list">200만 원 ~ 300만 원</li>
+                                    <li class="budget__list">300만 원 ~ 500만 원</li>
+                                    <li class="budget__list">500만 원 ~ 1000만 원</li>
+                                    <li class="budget__list">1000만 원 이상</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="onload form__default">
+                            <h3 class="onload__title"><span>핀셋 마케팅을 알게된 경로를 선택해주세요.</span></h3>
+                            <div class="onload__area">
+                                <div class="onload__input__area">
+                                    <input type="text" name="onload" id="onload" readonly placeholder="알게된 경로를 선택해주세요.">
+                                    <span class="onload__arrow"><img src="img/icon/arrow.svg" alt="화살표 모양 버튼"></span>
+                                </div>
+                                <ul class="onload__list-area">
+                                    <li class="onload__list">머니테이커 유튜브</li>
+                                    <li class="onload__list">머니테이커 블로그</li>
+                                    <li class="onload__list">일반 블로그(머니테이커 채널X)</li>
+                                    <li class="onload__list">두잇 카페</li>
+                                    <li class="onload__list">지인 소개</li>
+                                    <li class="onload__list">각종 광고</li>
+                                    <li class="onload__list">기타</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="marketing-before form__default">
+                            <h3 class="marketing-before__title"><span>이전에 진행한 혹은 현재 진행중인 <br>마케팅이 있다면 아래 빈칸에 적어주세요</span>
+                            </h3>
+                            <p><textarea name="before" id="before" cols="30" rows="10" form="customer-info"></textarea></p>
+                        </div>
+                    </div>
+                    <div class="submit-btn">
+                        <button type="submit">문의하기</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <a href="" class="footer__logo">PINSET MARKETING</a>
+        <p class="footer__company-information">
+            업체명: <span>핀셋마케팅</span> | 사업자등록번호: 101-31-55383 | 문의: newreviewer@naver.com
+        </p>
+        <p class="footer__warning-link">
+            <a href="" class="footer__email">이메일무단수집거부 ·</a>
+            <a href="" class="footer__privacy-policy"> 개인정보처리방침</a>
+        </p>
+
+        <p class="footer__copyright">COPYRIGHT BY 핀셋마케팅. ALL RIGHTS RESERVED</p>
+    </footer>
+
+    <script src="js/header-footer.js"></script>
+    <script src="js/contact.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/underscore@1.13.1/underscore-umd-min.js"></script>
+</body>
+
+</html>

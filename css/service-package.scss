@@ -1,0 +1,36 @@
+.service-content__detail__subtitle{
+    margin-top: 50px;
+
+    span{
+        font-size: 2.4rem;
+        font-weight: 700;
+    }
+}
+
+.service-content__detail__text-area1{
+    margin-top: 50px;
+
+    p{
+        &:first-child{
+            margin-bottom: 10px;
+        }
+
+        span{
+            font-size: 1.8rem;
+        }
+    }
+}
+
+.service-content__detail__img-area{
+    margin: 50px 0;
+}
+
+.service-content__detail__text-area2{
+    p{
+        margin-top: 50px;
+
+        span{
+            font-size: 1.8rem;
+        }
+    }
+}
