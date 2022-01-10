@@ -26,7 +26,7 @@ function textLoop() {
             brFirstChild.remove();
             loopText2 = setTimeout(textLoop, 1000);
         }, 1000);
-    }, 1000)
+    }, 500)
 }
 
 
@@ -34,7 +34,7 @@ function textLoop() {
 var brIdx = 0;
 
 function textTyping(){
-    var brText = document.querySelector('.effect-text__cont__text-area'),
+    var brText = document.querySelector('.effect-text__cont__text-area span'),
     brArr = [['영','업',' ','전','화','번','호','가',' ','없','습','니','다','.'],['오','는',' ','문','의','를',' ','소','화','하','기','도',' ','바','쁩','니','다','.']];
     brArr[brIdx].forEach((el, idx) => {
         setTimeout(() => {
@@ -45,9 +45,9 @@ function textTyping(){
                         brText.innerHTML = brText.innerHTML.substring(0, brText.innerHTML.length - 1);
                         if(idx2 == brArr[brIdx].length - 1){
                                 brIdx == 0 ? brIdx = 1 : brIdx = 0;
-                                loopText = setTimeout(textTyping, 1000);
+                                loopText = setTimeout(textTyping, 500);
                         }
-                    }, 50 * (idx2 + 1))
+                    }, 30 * (idx2 + 1))
                 })
             }
         }, 100 * idx)

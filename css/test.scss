@@ -42,6 +42,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    strong{
+        font-weight: 500;
+    }
 }
 
 .effect-text__cont, .effect-text__cont2{
@@ -63,8 +67,19 @@
     position: absolute;
 
     span{
+        position: relative;
+        z-index: 1;
+        font-weight: 700;
+    }
+
+    &::before{
         display: inline-block;
-        opacity: 0;
+        content: '';
+        position: absolute;
+        z-index: 0;
+        width: 100%; height: 70%;
+        bottom: 0;
+        background: #c5d1e2;
     }
 }
 
@@ -76,6 +91,7 @@
 
     span{
         display: inline-block;
+        font-weight: 700;
         transition: cubic-bezier(0.76, 0, 0.24, 1) 1s;
     }
 
