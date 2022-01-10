@@ -12,11 +12,13 @@
 
 html {
   font-size: 10px;
+  scroll-behavior: smooth;
 }
 
 html,
 body {
   width: 100%;
+  overflow-x: hidden;
   -webkit-transition: .5s;
   transition: .5s;
   -webkit-text-size-adjust: none;
@@ -605,6 +607,7 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 50px 0;
 }
 
 .footer__logo {
